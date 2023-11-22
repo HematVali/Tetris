@@ -59,6 +59,10 @@ def load_up():
 
         T.mainloop()
 
+logindb = mysql.connector.connect(host='localhost', user='root', password='Dieren2013', port='3306',
+                                  database='userlogin')
+# this will connect my database
+mycursor = logindb.cursor()  # allows me to curse through my database
 
 
 
